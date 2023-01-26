@@ -1,0 +1,26 @@
+@use '../abstracts/variables';
+
+.slider {
+    background: url('./assets/images/sliders/band.png') 0 0 no-repeat;
+    width: 100%;
+    height: 760px;
+    background-size: cover;
+    position: relative;
+    top: 41.25px;
+    &__content {
+        position: absolute;
+        bottom: 47px;
+        width: 100%;
+        text-align: center;   
+    }
+    &__heading {
+        font-size: 24px;
+        color: variables.$base-color;
+        font-weight: bold;
+    }
+    &__description {
+        font-size: 15px;
+        color: variables.$base-color;
+        margin-top: 15px;
+    }
+}
