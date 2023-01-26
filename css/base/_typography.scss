@@ -1,0 +1,13 @@
+// @use '../assets/fonts/Jost-Italic-VariableFont_wght.ttf';
+// @use '../assets/fonts/Jost-VariableFont_wght.ttf';
+@use '../abstracts/variables';
+
+@font-face {
+    font-family: variables.$baseFontName;
+    src: url(../assets/fonts/static/Jost-Regular.ttf);
+}
+
+// Font mặc định
+* {
+    font-family: variables.$baseFontName;
+}

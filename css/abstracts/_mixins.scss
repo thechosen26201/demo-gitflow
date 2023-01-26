@@ -1,0 +1,24 @@
+@use '../abstracts/variables';
+
+@mixin buttonHover {
+    background-color: variables.$hover-color;
+    color: variables.$dark-color;
+    cursor: pointer;
+}
+
+@mixin subNavDisplay($isHover: false) {
+    @if($isHover) {
+        .navigation__subnav {
+            display: block;
+            position: absolute;
+            top: 41.25px;
+            box-shadow:  4px 4px 10px rgb(0 0 0 / 10%), 0 4px 20px 10px rgb(0 0 5 / 4%);
+            left: 0;
+            min-width: 160px;
+        }
+    }
+}
+
+@mixin cursorHover {
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.navigation {
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: variables.$dark-color;
+    color: variables.$base-color;
+    display: flex;
+    justify-content: space-between;
+    height: 41.25px;
+    &__item {
+        padding: 12px 24px;
+        position: relative;
+        &:hover {
+            @include mixins.buttonHover;
+        }
+        
+    }
+    &__subnav {
+        display: none;
+    }
+    &--left, &--right {
+        display: flex;
+    }
+    &__searchIcon {
+        padding: 12px 24px;
+        &:hover {
+            background-color: variables.$danger-color;
+            @include mixins.cursorHover;
+        }
+    }
+}
+
+.sub:hover {
+    @include mixins.subNavDisplay(true);
+}
+.subnav__item {
+    padding: 8px 16px;
+    &:hover {
+        background-color: variables.$hover-color;
+    }
+}
