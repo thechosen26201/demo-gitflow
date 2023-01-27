@@ -327,6 +327,7 @@ template {
   position: fixed;
   width: 100%;
   z-index: 10;
+  top: 0;
 }
 .navigation__item {
   padding: 12px 24px;
@@ -374,7 +375,7 @@ template {
   height: 760px;
   background-size: cover;
   position: relative;
-  top: 41.25px;
+  margin-top: 41.25px;
 }
 .slider__content {
   position: absolute;
@@ -391,4 +392,43 @@ template {
   font-size: 15px;
   color: #fff;
   margin-top: 15px;
+}
+
+.content {
+  width: 800px;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+.content__bandName, .content__quote {
+  text-align: center;
+}
+.content__bandName {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.content__quote {
+  font-style: italic;
+  opacity: 0.6;
+  margin: 25px 0 15px;
+}
+.content__paragraph {
+  text-align: justify;
+  margin: 15px 0 47px;
+}
+.content__memberList {
+  display: flex;
+  justify-content: space-evenly;
+}
+.content__memberItem {
+  width: 33.33%;
+}
+.content__memberName {
+  text-align: center;
+  margin: 15px 0;
+}
+.content__memberImage {
+  background: url("./assets/images/band/bandmember.jpg") center/contain no-repeat;
+  width: 100%;
+  height: 154px;
 }/*# sourceMappingURL=main.css.map */

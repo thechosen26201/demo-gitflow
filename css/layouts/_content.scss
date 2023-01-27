@@ -1,0 +1,40 @@
+.content {
+    width: 800px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    &__bandName, &__quote {
+        text-align: center;
+    }
+    &__bandName {
+        font-size: 30px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    &__quote {
+        font-style: italic;
+        opacity: 0.6;
+        margin: 25px 0 15px;
+    }
+    &__paragraph {
+        text-align: justify;
+        margin: 15px 0 47px;
+    }
+    &__memberList {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__memberItem {
+        width: 33.33%;
+    }
+    &__memberName {
+        text-align: center;
+        margin: 15px 0;
+    }
+    &__memberImage {
+        background: url('./assets/images/band/bandmember.jpg') center/contain no-repeat;
+        width: 100%;
+        height: 154px;
+        // background-size: contain;
+        // background-position: center;
+    }
+}
