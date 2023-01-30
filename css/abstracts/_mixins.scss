@@ -23,25 +23,3 @@
 @mixin cursorHover {
     cursor: pointer;
 }
-
-@mixin middlePage {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 64px 16px;
-}
-
-@mixin titleAndQuote {
-    text-align: center;
-}
-
-@mixin title {
-    font-size: 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
-@mixin quote {
-    font-style: italic;
-    opacity: 0.6;
-    margin: 25px 0 15px;
-}
