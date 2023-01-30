@@ -1,9 +1,13 @@
+%textCenter {
+    text-align: center;
+}
+
 .content {
     width: 800px;
     margin: 0 auto;
     padding: 64px 16px;
     &__bandName, &__quote {
-        text-align: center;
+        @extend %textCenter;
     }
     &__bandName {
         font-size: 30px;
@@ -27,7 +31,7 @@
         width: 33.33%;
     }
     &__memberName {
-        text-align: center;
+        @extend %textCenter;
         margin: 15px 0;
     }
     &__memberImage {
